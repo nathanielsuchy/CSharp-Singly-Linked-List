@@ -78,8 +78,21 @@ namespace MyLinkedList
 
         public void AddAtIndex(int index, int val)
         {
-            if (index > (size - 1))
+            if (index > size)
             {
+                return;
+            }
+
+            // Add to head
+            if (index == 0)
+            {
+                AddAtHead(val);
+                return;
+            }
+
+            if (index == size)
+            {
+                AddAtTail(val);
                 return;
             }
 
@@ -103,7 +116,7 @@ namespace MyLinkedList
 
         public void DeleteAtIndex(int index)
         {
-            if (index > (size - 1))
+            if (index >= size || index < 0)
             {
                 return;
             }
@@ -120,7 +133,7 @@ namespace MyLinkedList
             }
 
             // Delete Tail
-            if (index == (size - 1))
+            if (index == (size-1))
             {
                 while (i < (index - 1))
                 {

@@ -20,24 +20,21 @@ namespace MyLinkedList
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-
+            
             MyLinkedList obj = new MyLinkedList();
+            obj.AddAtHead(5);
 
-            //obj.AddAtHead(2);
-            //obj.AddAtTail(4);
-            //obj.AddAtHead(1);
-            //obj.AddAtIndex(2, 3);
+            Console.WriteLine($"index 0 = {obj.Get(0)}");
+            Console.WriteLine($"index 1 = {obj.Get(1)}");
+            Console.WriteLine($"index 2 = {obj.Get(2)}");
+            Console.WriteLine($"index 3 = {obj.Get(3)}");
+            Console.WriteLine($"index 4 = {obj.Get(4)}");
+            Console.WriteLine($"index 5 = {obj.Get(5)}");
+            Console.WriteLine($"index 6 = {obj.Get(6)}");
+            Console.WriteLine($"index 7 = {obj.Get(7)}");
+            Console.WriteLine($"index 8 = {obj.Get(8)}");
+            Console.WriteLine($"index 9 = {obj.Get(9)}");
 
-            //obj.AddAtIndex(0, -5);
-
-            //Console.WriteLine($"Index 0 = {obj.Get(0)}");
-            //Console.WriteLine($"Index 1 = {obj.Get(1)}");
-            //Console.WriteLine($"Index 2 = {obj.Get(2)}");
-            //Console.WriteLine($"Index 3 = {obj.Get(3)}");
-            //Console.WriteLine($"Index 4 = {obj.Get(4)}");
-            //Console.WriteLine($"Index 5 = {obj.Get(4)}");
-            //Console.WriteLine($"Index 6 = {obj.Get(4)}");
-            //Console.WriteLine($"Index 7 = {obj.Get(4)}");
         }
     }
 }
