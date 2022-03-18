@@ -17,7 +17,7 @@ namespace MyLinkedList
 
         public int Get(int index)
         {
-            if (index > (size - 1))
+            if (index > (size - 1) || index < 0)
             {
                 return -1;
             }
@@ -78,7 +78,7 @@ namespace MyLinkedList
 
         public void AddAtIndex(int index, int val)
         {
-            if (index > size)
+            if (index > size || index < 0)
             {
                 return;
             }
@@ -133,7 +133,7 @@ namespace MyLinkedList
             }
 
             // Delete Tail
-            if (index == (size-1))
+            if (index == (size - 1))
             {
                 while (i < (index - 1))
                 {
